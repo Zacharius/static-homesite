@@ -1,0 +1,189 @@
+
+.left-panel {
+    margin-left: 2em;
+    width: 10%;
+}
+
+#menu {
+    border: .3em ridge;
+}
+
+#index {
+    font-family: Baskerville;
+}
+
+a {
+    color: black;
+    text-decoration: underline
+}
+
+
+.right-panel {
+    border: .3em ridge;
+    margin: 5em 1em 0 0;
+    width: 10%;
+}
+
+.navitem {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.navitem * {
+    color: red;
+    text-decoration: none;
+}
+
+.content {
+    border: .3em ridge; 
+    margin: 1em;
+}
+
+#content {
+    margin: 2em;
+}
+
+.hentry {
+    border: .3em groove;
+    margin: 1em;
+}
+
+.contact {
+    float: right;
+}
+
+.contact td  {
+    padding-right: 1em;
+    text-align: right;
+}
+
+.articleLink {
+    
+    border-bottom: 1px solid black;
+    padding: .2em;
+    margin: 1em;
+}
+
+.articleLink a {
+    color: black;
+    text-decoration: none;
+}
+
+
+img {
+    width:100%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+pre {
+    background-color: #f2f2f2;
+    border: 3px solid black;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+}
+
+.commentForm {
+    width: 50%;
+    margin: auto;
+
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+form table {
+    margin-top: 1em;
+}
+
+label{
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+    width: 300px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus{
+    border-color: #000;
+}
+
+.article{
+    border-bottom: 1px dashed black;
+}
+
+.comment {
+    border: 2px solid black;
+    background-color: lavender;
+    margin: 1em;
+}
+
+.comment *{
+    background-color: lavender;
+    font-size: 90%;
+    margin: 1em;
+}
+
+.comment p i {
+    font-size: 80%;
+}
+    
+.bookshelf {
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+}
+
+.book * {
+    
+    text-align: center;
+}
+
+iframe {
+    width: 12em;
+    height: 25em;
+}
+
+.resume {
+    margin-top: 5em;
+    border: 2px solid black;
+}
+
+.resume * {
+    margin: .5em;
+}
+
+ .section {
+    border-bottom: 2px solid black;
+}
+
+
+.resume h1 {
+    text-align: center;
+}
+
+.resume h3{
+    margin-top: 3em;
+}
+
+.flexrow {
+    display:flex;
+}
+
+.flexrow * {
+    flex: 1;
+}
+
+.resume a {
+    color: black;
+}
+
+

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content">
+{% block content_title %}
+<h2 class="text-center">Articles</h2>
+{% endblock %}
+
+{% for article in articles_page.object_list %}
+    <article class="hentry">
+	<header>
+	    <h2 class="entry-title">
+		<a href="{{ SITEURL }}/{{ article.url }}"
+		   rel="bookmark"
+		   title="Permalink to {{ article.title|striptags }}">{{ article.title }}
+		</a>
+	    </h2>
+	    <div class="row">
+		<div class="col float-left">
+		    <p class="font-italic">{{ article.locale_date }}</p>
+		</div>
+		{% if article.tags %}
+		    <div class="col float-right">
+			<p>Tags:
+			{% for tag in article.tags %}
+			    <a href={{ tag.url }}>{{ tag.name }}</a>  
+			{% endfor %}
+			</p>
+		    </div>
+		{% endif %}
+	    </div>
+		  
+		
+	</header>
+    </article>
+{% endfor %}
+{% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+{% endif %}
+</section><!-- /#content -->
+{% endblock content %}
